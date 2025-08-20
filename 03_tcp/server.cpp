@@ -26,7 +26,7 @@ static void do_something(int connfd) {
   printf("client says: %s\n", rbuf);
 
   char wbuf[] = "Hello, client!";
-  write(connfd, wbuf, strlen(wbuf)); // echo
+  write(connfd, wbuf, strlen(wbuf));
 }
 
 int main() {
